@@ -2,10 +2,10 @@ package org.primeirasemana;
 
 public class Metodos {
     public static void main(String[] args) {
-        int n1 = 1;
-        int n2 =2;
+
+
         
-        System.out.println();
+
     }
     public double somar(int n1, int n2){return;};
     public void imprimir(String texto){};
