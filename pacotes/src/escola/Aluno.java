@@ -7,8 +7,8 @@ public class Aluno{
         return nome;
     }
     public void setNome(String newNome){
-        if (nome ) {
-            
+        if (nome != null) {
+          
         }
         nome = newNome;
     }
