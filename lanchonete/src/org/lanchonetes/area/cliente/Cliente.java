@@ -1,4 +1,4 @@
-package org.lanchonetes;
+package org.lanchonetes.area.cliente;
 
 public class Cliente {
     public void escolherPedido(){System.out.println("ESCOLHENDO O PEDIDO");}

@@ -1,4 +1,6 @@
-package org.lanchonetes;
+package org.lanchonetes.atendimento.cozinha;
+
+import org.lanchonetes.atendimento.Atendente;
 
 public class Cozinheiro {
 
@@ -8,6 +10,7 @@ public class Cozinheiro {
 
     public void pedirIngredientes(Almoxarife almoxarife){almoxarife.entregarIngredientes();}
     public void pedirParaTrocarGas(Almoxarife meuAmigo){meuAmigo.trocarGas();}
+    
 
     public void fritarIngredientesLanche(){System.out.println("FRITANDO A CARNE E OVO PARA O HAMBURGUER");}
 

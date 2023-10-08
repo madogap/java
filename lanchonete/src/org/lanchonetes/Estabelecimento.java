@@ -1,5 +1,10 @@
 package org.lanchonetes;
 
+import org.lanchonetes.area.cliente.Cliente;
+import org.atendimento.Atendente;
+import org.lanchonetes.atendimento.cozinha.Almoxarife;
+import org.lanchonetes.atendimento.cozinha.Cozinheiro;
+
 public class Estabelecimento {
     Cozinheiro cozinheiro = new Cozinheiro();
     //nao preciasam esta visiveis para todas as aplicacoes
@@ -18,16 +23,14 @@ public class Estabelecimento {
     //nao preciasam esta visiveis para todas as aplicacoes
     almoxarife.controlarEntrada();
     almoxarife.controlarSaida();
-    //acao somente o pacote cozinha precisar saber (default)
-    almoxarife.entregarIngredientes();
-    almoxarife.trocarGas();
+
 
     Atendente atendente = new Atendente();
     atendente.pegarLancheCozinha();
     atendente.receberPagameto();
     atendente.servindoMesa();
     //acoa somente o pacote cozinha precisar saber (default)
-    atendente.trocarGas();
+    //atendente.trocarGas();
 
     Cliente cliente = new Cliente();
     cliente.escolherLanche();
