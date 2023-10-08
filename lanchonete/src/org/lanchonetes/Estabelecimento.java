@@ -35,4 +35,5 @@ public class Estabelecimento {
     //cliente.consultarSaldoAplicativo();
     //cozinheiro.pedirParaTrocarGas(atendente);
     //cozinheiro.pedirParaTrocarGas(almoxarife);
+  
 }
