@@ -1,6 +1,8 @@
 package estadobrasileiros;
 
 public enum EstadoBrasileiro {
+    //Pode vir de um banco de dados ou de uma API inves de usar um enum
+    //Enum dados que nao se modificam
     ACRE("AC","Acre",12,"NORTE"),
     ALAGOAS("AL","Alagoas",27,"NORDESTE"),
     AMAPA("AP","Amapá",16,"NORTE"),
@@ -34,6 +36,7 @@ public enum EstadoBrasileiro {
     private int ibge;
     private String regiao;
 
+    //Construtor
     private EstadoBrasileiro(String sigla, String nome, int ibge, String regiao) {
         this.sigla = sigla;
         this.nome = nome;
@@ -59,5 +62,8 @@ public enum EstadoBrasileiro {
 
     public String getNomeMaisculo() {
         return nome.toUpperCase();
+    }
+    public String getSiglaMinusculo(){
+        return sigla.toLowerCase();
     }
 }

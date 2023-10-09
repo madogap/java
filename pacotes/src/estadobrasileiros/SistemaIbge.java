@@ -11,5 +11,6 @@ public class SistemaIbge {
         System.out.println(eb.getSigla());
         System.out.println(eb.getNomeMaisculo());
         System.out.println("O númermo do Estado de " + eb.getNome() + " de acordo com o IBGE é " +eb.getIbge());
+        System.out.println(eb.getSiglaMinusculo());
     }
 }
