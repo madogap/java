@@ -1,20 +1,23 @@
+import apps.FacebookMessenger;
+import apps.MsnMessenger;
+import apps.ServiceMessengerInstantania;
+import apps.TelegramMessenger;
+
 public class Computador {
     public static void main(String[] args) {
-        MsnMessenger msn = new MsnMessenger();
+        ServiceMessengerInstantania smi = null;
 
-        msn.enviarMensagem();
+        String appEscolhido = "fbm";
+        if (appEscolhido.equals("msn")) {
+            smi = new MsnMessenger();
+        } else if (appEscolhido.equals("fbm")) {
+            smi = new FacebookMessenger();
+        } else if (appEscolhido.equals("tlg")) {
+            smi = new TelegramMessenger();
+        }
+        smi.enviarMensagem();
+        smi.receberMensagem();
 
-        msn.receberMensagem();
-
-        FacebookMessenger fcbm = new FacebookMessenger();
-
-        fcbm.enviarMensagem();
-
-        fcbm.receberMensagem();
-
-        TelegramMessenger tlm = new TelegramMessenger();
-        tlm.enviarMensagem();
-        tlm.receberMensagem();
     }
 
 }
