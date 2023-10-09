@@ -1,5 +1,7 @@
 public class Carro {
-    private void ligar() {
+    public void ligar() {
+        confereCambio();
+        confereCombustivel();
         System.out.println("Carro ligado");
     }
 
